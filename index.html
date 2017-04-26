@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Blog Posts | Portfolio</title>
+</head>
+<style type="text/css">
+	#footer {
+	padding-bottom: 25px;
+    background: #555555;
+}
+#footer-inner {
+	text-align: center;
+}
+#cat > li {
+	padding: 5px;
+}
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+table{
+	max-width:400px;
+	color:white;
+	margin:auto;
+}
+table td{
+	padding-top:12px;
+}
+.sec{
+	padding-left:15px;
+}
+</style>
+<body>
+	<header class="cd-main-header">
+		<a href="#0" class="cd-logo" style="color: #fff;padding-top: 3px;"><!--<img src="img/cd-logo.svg" alt="Logo">--> Blog Posts</a>
+
+		<a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+		<nav class="cd-nav">
+			<ul class="cd-top-nav">
+				<!--<li><a href="#0" style="margin-top: 5px;">Tour</a></li>
+				<li><a href="#0" style="margin-top: 5px;">Support</a></li>-->
+				
+					<!--<a href="#0">
+						<img src="img/cd-avatar.png" alt="avatar">
+						Account
+					</a>-->
+					<div class="cd-search is-hidden">
+						<form action="#0">
+							<input type="search" placeholder="Search...">
+						</form>
+					</div> <!-- cd-search -->
+					<!--<ul>
+
+						<li><a href="#0">My Account</a></li>
+						<li><a href="#0">Edit Account</a></li>
+						<li><a href="#0">Logout</a></li>
+					</ul>-->
+				
+			</ul>
+		</nav>
+	</header> <!-- .cd-main-header -->
+
+	<main class="cd-main-content">
+		<nav class="cd-side-nav">
+			<ul>
+				<li class="cd-label">Posts</li>
+				<li class="has-children bookmarks">
+					<a href="#0">Category 1</a>
+					
+					<ul>
+						<li><a href="#0">Sub Category 1</a></li>
+						<li><a href="#0">Sub Category 2</a></li>
+						<li><a href="#0">Sub Category 3</a></li>
+					</ul>
+				</li>
+				<li class="has-children bookmarks">
+					<a href="#0">Category 2</a>
+					
+					<ul>
+						<li><a href="#0">Sub Category 1</a></li>
+						<li><a href="#0">Sub Category 2</a></li>
+						<li><a href="#0">Sub Category 3</a></li>
+					</ul>
+				</li>
+
+				<li class="has-children bookmarks">
+					<a href="#0">Category 3</a>
+					
+					<ul>
+						<li><a href="#0">Sub Category 1</a></li>
+						<li><a href="#0">Sub Category 2</a></li>
+						<li><a href="#0">Sub Category 3</a></li>
+					</ul>
+				</li>
+				<li class="has-children bookmarks">
+					<a href="#0">Category 4</a>
+					
+					<ul>
+						<li><a href="#0">Sub Category 1</a></li>
+						<li><a href="#0">Sub Category 2</a></li>
+						<li><a href="#0">Sub Category 3</a></li>
+					</ul>
+				</li>
+
+				<li class="has-children bookmarks">
+					<a href="#0">Category 5</a>
+					
+					<ul>
+						<li><a href="#0">Sub Category 1</a></li>
+						<li><a href="#0">Sub Category 2</a></li>
+						<li><a href="#0">Sub Category 3</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<ul>
+				<li class="cd-label">Admin</li>
+				<li class="action-btn"><a href="#0" id="myBtn">Login</a></li>
+			</ul>
+		</nav>
+		<div class="content-wrapper" style="background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);">
+			<h1></h1>
+			<h1 style="padding-top: 10px;"><img src="img/cd-avatar.png" style="border-radius: 50%; width: 100px;" align="middle" alt="avatar"></h1>
+			<h1 style="color: #fff; padding-top: 10px;">About</h1>
+			<br/>
+			<br/>
+			<table>
+			<tr><td>Name&nbsp;&nbsp;</td><td class="sec">:&nbsp;&nbsp;&nbsp;&nbsp;qwerty</td></tr>
+			<tr><td>Email&nbsp;&nbsp;</td><td class="sec">:&nbsp;&nbsp;&nbsp;&nbsp;qwerty@domain.com</td></tr>
+			<tr><td>Contact&nbsp;&nbsp;</td><td class="sec">:&nbsp;&nbsp;&nbsp;&nbsp;9876543210</td></tr>
+			<tr><td>Address&nbsp;&nbsp;</td><td class="sec">:&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text.</td></tr>
+			</table>
+			<p style="padding-top: 30px; color: #fff;text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+		</div> <!-- .content-wrapper -->
+		<div class="content-wrapper" style="padding-top: 20px;">
+		<h1 style="padding: 10px;">Posts Category</h1>
+		<br/>
+		<br/>
+			<ul class="flex-container">
+			  <a href=""><li class="flex-item">Category 1</li></a>
+			  <a href=""><li class="flex-item">Category 2</li></a>
+			  <a href=""><li class="flex-item">Category 3</li></a>
+			  <a href=""><li class="flex-item">Category 4</li></a>
+			  <a href=""><li class="flex-item">Category 5</li></a>
+			  <a href=""><li class="flex-item">Category 6</li></a>
+			  <a href=""><li class="flex-item">Category 7</li></a>
+			  <a href=""><li class="flex-item">Category 8</li></a>
+			</ul>
+		</div>
+		<br/>
+		<br/>
+		<div class="content-wrapper" id="footer" style="padding-top: 20px;">
+			<div id="footer-inner">
+			<p style="color: #fff;">Designed and Developed by IET.</p>
+			</div>
+		</div>
+	</main> <!-- .cd-main-content -->
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div style="text-align: center;">
+    <p>Some text in the Modal..</p>
+    <input type="button" onclick="location.href='http://google.com';" value="Login" />
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery.menu-aim.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
