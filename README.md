@@ -1,1 +1,1 @@
-The project is under constriuction.
+The project is under construction.
